@@ -1,17 +1,4 @@
-# Genji
-
-A Next.js Web3 app template.
-
-## Features
-
-- [Next.js](https://nextjs.org/)
-- [Web3 Modal](https://web3modal.com/)
-- [Ethers.js](https://ethers.org/) (v6)
-- [Chakra UI](https://chakra-ui.com/)
-
-View the [Solidity contract](https://github.com/w3hc/w3hc-hardhat-template/blob/main/contracts/Basic.sol) used in the example.
-
-Web app live at [https://genji-app.netlify.app](https://genji-app.netlify.app).
+# Audio blog
 
 ## Install
 
@@ -48,7 +35,3 @@ Here are the known minimal mobile hardware requirements:
 ## Support
 
 You can contact me via [Element](https://matrix.to/#/@julienbrg:matrix.org), [Farcaster](https://warpcast.com/julien-), [Telegram](https://t.me/julienbrg), [Twitter](https://twitter.com/julienbrg), [Discord](https://discordapp.com/users/julienbrg), or [LinkedIn](https://www.linkedin.com/in/julienberanger/).
-
-## Credits
-
-Special thanks to Wesley ([@wslyvh](https://github.com/wslyvh)) for building [Nexth](https://github.com/wslyvh/nexth). I also want to thank the [Wallet Connect](https://walletconnect.com/) team, [@glitch-txs](https://github.com/glitch-txs) in particular. And of course [@ricmoo](https://github.com/ricmoo) for maintaining [Ethers.js](https://ethers.org/)!

@@ -20,9 +20,9 @@ const sepolia = {
 }
 
 const metadata = {
-  name: 'Genji',
-  description: 'Next.js + Web3 Modal + Ethers.js + Chakra UI',
-  url: 'https://genji.netlify.app',
+  name: 'Julien Béranger Audio Blog',
+  description: 'Audio blog',
+  url: 'https://blog.julienberanger.com',
   icons: ['./favicon.ico'],
 }
 
