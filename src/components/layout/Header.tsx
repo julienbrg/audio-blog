@@ -1,9 +1,11 @@
 import React from 'react'
-import { Flex, useColorModeValue, Spacer, Heading, Box, Link, Icon } from '@chakra-ui/react'
+import { Flex, useColorModeValue, Spacer, Heading, Box, Link, Icon, Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react'
 import { LinkComponent } from './LinkComponent'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import { SITE_NAME } from '../../utils/config'
 import { FaGithub } from 'react-icons/fa'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import Image from 'next/image'
 
 interface Props {
   className?: string
@@ -23,15 +25,28 @@ export function Header(props: Props) {
       <Spacer />
 
       <Flex alignItems="center" gap={4}>
-        <w3m-button />
-        <Flex alignItems="center">
+        <Menu>
+          <MenuButton as={IconButton} aria-label="Options" icon={<HamburgerIcon />} variant="ghost" size="sm" />
+          <MenuList>
+            <LinkComponent href="/">
+              <MenuItem fontSize="md">Home</MenuItem>
+            </LinkComponent>
+          </MenuList>
+        </Menu>
+        <IconButton
+          as={Link}
+          href="https://github.com/julienbrg/audio-blog"
+          aria-label="GitHub"
+          icon={<FaGithub />}
+          variant="ghost"
+          size="sm"
+          color="white"
+          _hover={{ color: 'white', bg: 'transparent' }}
+          isExternal
+        />
+        <Box mb={1} ml={2}>
           <ThemeSwitcher />
-          <Box mt={2} ml={4}>
-            <Link href="https://github.com/w3hc/genji" isExternal>
-              <Icon as={FaGithub} boxSize={5} _hover={{ color: 'blue.500' }} />
-            </Link>
-          </Box>
-        </Flex>
+        </Box>
       </Flex>
     </Flex>
   )
